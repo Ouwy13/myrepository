@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 20,
+  "editor.fontSize": 22,
   "editor.letterSpacing": -0.2,
   "editor.lineHeight": 32,
   "editor.rulers": [80, 120],
@@ -26,7 +26,6 @@
     "c:/Users/Administrator/Pictures/1351415.png"
   ],
   "workbench.sideBar.location": "right",
-  "window.titleBarStyle": "native",
   "background.backgroundBlur": ["6px", "0", "0", "0"],
   "editor.codeLensFontFamily": "JetBrains Mono",
   "editor.inlayHints.fontFamily": "JetBrains Mono",
