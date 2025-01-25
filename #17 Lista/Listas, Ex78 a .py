@@ -227,10 +227,10 @@ def Ex83():
     a = caracter.count('(')
     b = caracter.count(')')
     print(f'{'\033[37m'}{'——'*10}')
-    if (a + b) % 2 == 0:
-        print('Sua expressão é valida!\033[m')
+    if (a + b) % 2 == 0 and a == b:
+        print('\033[32mSua expressão é valida!\033[m')
     else:
-        print('Sua expressão não é valida!\033[m')
+        print('\033[31mSua expressão não é valida!\033[m')
 
 if __name__ == "__main__":
     Ex83()
