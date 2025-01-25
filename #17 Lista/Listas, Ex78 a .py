@@ -132,63 +132,53 @@ def Ex80():
         print('Lista')
         valores = list()
         v = 1
+        maior = menor = 0
         while True:
             valor = int(input(f'Digite {v}ª valor: '))
             if v == 1:
                 maior = valor
                 valores.append(valor)
-                print('Adicionado no final da lista')
+                print('Adicionando valor no final da lista')
             elif v == 2:
-                if valor <= maior:
-                    menor = valor
-                    valores.insert(0, valor)
-                    print('Adicionado na posição 0')
-                else:
+                if valor < maior:
+                    menor = valor 
+                    valores.insert(0,valor)
+                    print('Valor adicionado na posição 0')
+                elif valor >= maior:
+                    menor = maior
                     maior = valor
                     valores.append(valor)
-                    print('Adicionado no final da lista')
-            
-            elif v == 3:
-                if valor >= maior:
-                    maior = valor
-                    valores.append(valor)
-                    print('Adicionado no final')
-                elif valor <= menor:
-                    valores.insert(0, valor)
-                    print('Adicionado na posição 0')
-                elif valor > menor and valor < maior:
-                    valores.insert(3, valor)
-                    print('Adicionado na 3 posição')
-            elif v ==4:
-                if valor >= maior:
-                    maior = valor
-                    valores.append(valor)
-                    print('Adicionado no final')
-                elif valor <= menor:
-                    valores.insert(0, valor)
-                    print('Adicionado na posição 0')
-                elif valor > menor and valor < maior:
-                    valores.insert(4, valor)
-                    print('Adicionado na 4 posição')
-            elif v ==5:
-                if valor >= maior:
-                    maior = valor
-                    valores.append(valor)
-                    print('Adicionado no final')
-                elif valor <= menor:
-                    valores.insert(0, valor)
-                    print('Adicionado na posição 0')
-                elif valor > menor and valor < maior:
-                    valores.insert(5, valor)
-                    print('Adicionado na 5 posição')
-                break
-            v +=1
+                    print('Valor adicionado no final')
         print(f'Os valores em ordem: {valores}')
 
 def Ex81():
-    print('Hello world')
-    
-
+    print('Lista de numeros')
+    v =1
+    valores = list()
+    while True:
+        valores.append(int(input(f'Qual o {v}ª valor: ')))
+        v +=1
+        while True:
+            cond = str(input('Continaur [S/N]: ')).strip().upper()[0]
+            if cond in 'SN':
+                break
+        if cond == 'N':
+            break
+    # Numero de valores
+    print(f'Você digitou {len(valores)} valores')
+    # Ordem descresente
+    print('Os valores em ordem descresente: ',end='')
+    valores.sort(reverse=True)
+    for valor in valores: 
+        print(valor,end= ' ')
+    # Quantas vezes apareceu o numero 5
+    if 5 in valores:
+        print('\nO valor 5 apareceu nas posições: ',end=' ')
+        for pos,valor in enumerate(valores):
+            if valor == 5:
+                print(f'{pos}', end=' ')
+    else:
+        print('\nO valor 5 não apareceu!')
 
 if __name__ == "__main__":
     Ex81()
