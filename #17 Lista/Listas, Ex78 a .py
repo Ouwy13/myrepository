@@ -132,24 +132,7 @@ def Ex80():
         print('Lista')
         valores = list()
         v = 1
-        maior = menor = 0
-        while True:
-            valor = int(input(f'Digite {v}ª valor: '))
-            if v == 1:
-                maior = valor
-                valores.append(valor)
-                print('Adicionando valor no final da lista')
-            elif v == 2:
-                if valor < maior:
-                    menor = valor 
-                    valores.insert(0,valor)
-                    print('Valor adicionado na posição 0')
-                elif valor >= maior:
-                    menor = maior
-                    maior = valor
-                    valores.append(valor)
-                    print('Valor adicionado no final')
-        print(f'Os valores em ordem: {valores}')
+        ultimo = primeiro = 0
 
 def Ex81():
     print('Lista de numeros')
@@ -233,4 +216,4 @@ def Ex83():
         print('\033[31mSua expressão não é valida!\033[m')
 
 if __name__ == "__main__":
-    Ex83()
+    Ex80()
