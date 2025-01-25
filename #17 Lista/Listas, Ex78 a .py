@@ -179,6 +179,58 @@ def Ex81():
                 print(f'{pos}', end=' ')
     else:
         print('\nO valor 5 não apareceu!')
+def Ex82():
+    valores = list()
+    pares = list()
+    impares = list()
+    v = 1
+    print('Valores Pares e Impares')
+    while True:
+        valores.append(int(input(f'qual o {v}ª valor: ')))
+        v+=1
+        while True:
+            cond = str(input('Condição [S/N]: ')).strip().upper()[0]
+            if cond in 'SN':
+                break
+        if cond == 'N':
+            break
+        
+    valores.sort()
+    print('——'*20)
+    # Exibição da lista inteira
+    print('A lista completa:', end=' ')                
+    for valor in valores:
+        print(f'{valor}',end=' ')
+    # Analize de numeros pares e impares
+    for valor in valores:
+        if valor % 2 == 0:
+            pares.append(valor)
+        else:
+            impares.append(valor)
+    # Valores Pares
+    print('\nValores Pares: ',end='')
+    for par in pares:
+        print(par,end=' ')
+    # Valores Impares
+    print('\nValores Impares: ',end='')
+    for impar in impares:
+        print(impar,end=' ')
+   
+def Ex83():
+    caracter = list()
+    print('\033[1;37m∿∿'*10)
+    print(f'{'\033[36m'}{'Analize de expresão':^20}{'\033[37m'}')
+    print('∿∿'*10)
+    expressão = str(input('Digite a expressão:\n\033[36m '))
+    for letra in expressão:
+        caracter.append(letra)
+    a = caracter.count('(')
+    b = caracter.count(')')
+    print(f'{'\033[37m'}{'——'*10}')
+    if (a + b) % 2 == 0:
+        print('Sua expressão é valida!\033[m')
+    else:
+        print('Sua expressão não é valida!\033[m')
 
 if __name__ == "__main__":
-    Ex81()
+    Ex83()
