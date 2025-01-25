@@ -186,9 +186,7 @@ def Ex80():
         print(f'Os valores em ordem: {valores}')
 
 def Ex81():
-    print('Aopa')
-    print('Chalom')
-    print('Hello')
+    print('')
     
 
 
