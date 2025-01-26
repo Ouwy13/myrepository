@@ -78,8 +78,9 @@ def Test3():
     b.remove(4)
     print(f'Lista A: {a}')
     print(f'Lista B: {b}')
+
 def Ex78():
-    print('Ordem')
+    print('Maior e Menor e Posições')
     valores = list()
 
     for cont in range(1,6):
@@ -110,11 +111,17 @@ def Ex79():
     while True:
         valor = int(input(f'Informe {v}ª valor: '))
         v +=1
-        if valor in valores:
-            print('Valor ja existente')
+        '''if valor in valores:
+            print('Valor já existente')
         else:
             valores.append(valor)
+            print('Valor registrado..')'''
+        # Ou
+        if valor not in valores:
+            valores.append(valor)
             print('Valor registrado..')
+        else:
+            print('Valor já existente')
         while True:
             cond = str(input('Continuar [S/N]: ')).strip().upper()[0]
             if cond in 'SN':
@@ -129,11 +136,31 @@ def Ex79():
         print(valor,end =' ')
     
 def Ex80():
-        print('Lista')
-        valores = list()
-        v = 1
-        ultimo = primeiro = 0
-
+    print('Lista')
+    valores = list()
+    v = 1
+    for cont in range(0,6):
+            while True:
+                try:
+                    valor = int(input(f'Informe o {v}ª valor: '))
+                    break
+                except ValueError:
+                    print('Informe somente numeros')
+            v+=1
+            if cont == 0 or valor > valores[-1]:
+                valores.append(valor)
+                print('Adicionado no final')
+            else:
+                posição = 0
+                while posição < len(valores):
+                    if valor <= valores[posição]:
+                        valores.insert(posição ,valor)
+                        print(f'Numero adicionado na posição {posição}')
+                        break
+                posição +=1
+    for valor in valores:
+        print(f'{valor}',end=' ')
+    
 def Ex81():
     print('Lista de numeros')
     v =1
