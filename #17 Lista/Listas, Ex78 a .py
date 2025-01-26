@@ -243,4 +243,4 @@ def Ex83():
         print('\033[31mSua expressão não é valida!\033[m')
 
 if __name__ == "__main__":
-    Ex80()
+    Ex83()
