@@ -1,0 +1,4 @@
+/* Define a fonte do Explorer (pastas laterais) */
+.monaco-workbench .part.sidebar .monaco-list {
+  font-family: "IBM Plex Mono", monospace !important;
+}

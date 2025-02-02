@@ -176,19 +176,8 @@ def test():
 
 def test2():
     maipeso = menpeso = 0
-    nome_maipeso = ''
-    nome_menpeso = ''
     pessoas = [['Ana',100],['Paulo', 21],['Luiz',100], ['Jonas', 11]]
-    print(pessoas)
-    for pos,pessoa in enumerate(pessoas):
-        if pos == 0:
-            maipeso = pessoa[1]
-            menpeso = pessoa[1]
-        else:
-            if pessoa[1] >= maipeso:
-                maipeso = pessoa[1]
-            if pessoa[1] < menpeso:
-                menpeso = pessoa[1]
+
                 
     
     print(f'Maior peso {maipeso}Kg de ',end='')

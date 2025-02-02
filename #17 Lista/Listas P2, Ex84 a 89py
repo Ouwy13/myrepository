@@ -56,14 +56,13 @@ def Teoria3():
     print(f'Temos {m18} maiores de idade')
 
 def Ex84():
-    v = cadast = 0
+    v = 0
     menpeso = maipeso = 0
     dados = list()
     pessoas = list()
     
     while True:
         dados.append(str(input(f'Qual o nome da {v+1} pessoa: ')).strip())
-        cadast +=1
         v +=1
         while True:
             try:
@@ -75,29 +74,43 @@ def Ex84():
             cond = str(input('Continuar[S/N]: ')).strip().upper()[0]
             if cond in 'SN':
                 break
+        # Lembrete
+        '''Listas compostas não são posiveis de analizer listas internas
+        Necessita separa a lista com um for
+        Exemplo: 
+        for dados in pessoas:
+            if dados[1] == 2:
+                print('Sua lista interna tem valor 2')
+        '''
+        # Analize de quem é mais pessado/leve
+        if len(pessoas) == 0:
+            maipeso = menpeso = dados[1]
+        else:
+            if maipeso < dados[1]:
+                maipeso = dados[1]
+            if menpeso > dados[1]:
+                menpeso = dados[1]
+        # Adiciona os dados na lista principal
         pessoas.append(dados[:])
         dados.clear()
+        
         if cond == 'N':
             break
-    
-    for pos,pessoa in enumerate(pessoas):
-        if pos == 0:
-            maipeso = pessoa[1]
-            menpeso = pessoa[1]
-        else:
-            if pessoa[1] >= maipeso:
-                maipeso = pessoa[1]
-            if pessoa[1] < menpeso:
-                menpeso = pessoa[1]
-                
-    print(f'Ao todo, foram {cadast} pessoas cadastradas')
-    print(f'Maior peso {maipeso}Kg')
-    print(f'\nMenor peso {menpeso}Kg')
+                 
+    print(f'Ao todo, foram {len(pessoas)} pessoas cadastradas')
+    print(f'Maior peso {maipeso}Kg de ',end='')
+    for cont,pessoa in enumerate(pessoas):
+        if pessoa[1] == maipeso:
+            print(f'[{pessoa[0]}]',end=' ')
+
+    print(f'\nMenor peso {menpeso}Kg de ',end='')
+    for pessoa in pessoas:
+        if pessoa[1] == menpeso:
+            print(f'[{pessoa[0]}]',end=' ')
+            print('')
 
 def Ex85():
-    valores = list()
-    pares = []
-    impares = []
+    valores = [[],[]]
     for c in range (1,8):
         while True:
             try:
@@ -105,20 +118,13 @@ def Ex85():
                 break
             except ValueError:
                 print('Somente numeros!')
-        c +=1
-        if valor % 2 == 0:
-            pares.append(valor)
-        else:
-            impares.append(valor)
-    valores.append(pares)
-    valores.append(impares)
-    print(f'Valores pares: ',end='')
-    for valor in valores[0]:
-        if valor != 0:
-            print(valor,end=' ')
-    print(f'\nValores impares: ',end='')
-    for valor in valores[1]:
-        print(valor,end=' ')
+            c +=1
+            if valor % 2:
+                valores[0] = valor
+            else:
+                valores[1] = valor
+        
+    print(valores)
 
 
 

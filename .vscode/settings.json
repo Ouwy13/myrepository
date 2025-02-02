@@ -1,45 +1,59 @@
 {
-  "editor.fontSize": 22,
-  "editor.letterSpacing": -0.2,
-  "editor.lineHeight": 32,
-  "editor.rulers": [80, 120],
-  "editor.renderLineHighlight": "gutter",
+  "workbench.colorTheme": "Bearded Theme Vivid Black",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.statusBar.visible": false,
-  "errorLens.statusBarColorsEnabled": true,
-  "workbench.tree.indent": 18,
   "editor.fontFamily": "JetBrains Mono",
-  "window.density.editorTabHeight": "compact",
-  "breadcrumbs.enabled": false,
-  "editor.guides.highlightActiveIndentation": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "editor.cursorBlinking": "smooth",
-  "workbench.reduceMotion": "off",
-  "editor.minimap.sectionHeaderFontSize": 10,
-  "editor.minimap.autohide": true,
-  "background.windowBackgrounds": [
-    "c:/Users/Administrator/Pictures/1351415.png"
-  ],
-  "workbench.sideBar.location": "right",
-  "background.backgroundBlur": ["6px", "0", "0", "0"],
-  "editor.codeLensFontFamily": "JetBrains Mono",
-  "editor.inlayHints.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 24,
+  //Expaçamento de tecla
+  "editor.letterSpacing": 0,
+  //Expaçamento de tinha
+  "editor.lineHeight": 1.6,
+  //Ligatures
   "editor.fontLigatures": true,
+  //Tamanho do testo na tela
+  "editor.rulers": [80, 120],
+  // Borda da linha
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  // Pasta
   "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "workbench.tree.indent": 18,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // Diretorio do arquivo acima
+  "breadcrumbs.enabled": false,
+
+  "workbench.editor.showTabs": "none", //Barra de codigos abertos
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "editor.minimap.autohide": true,
+  "editor.minimap.sectionHeaderFontSize": 10,
+  // Scroll
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "auto",
+  // Status Bar abaixo
+  "workbench.statusBar.visible": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "IBM Plex Mono",
+  "terminal.integrated.fontSize": 14,
+  // Apc++
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "frame": false
+  },
   "apc.header": {
     "height": 36
   },
-  "apc.font.family": "JetBrains Mono",
+  //Espaçamento nas pastas lateral
   "apc.listRow": {
     "height": 24
   },
+
   "apc.stylesheet": {
     ".title-label > h2": "display: none",
+    ".custom-hover > h2": false,
+    ".draggable > h2": false,
     ".editor-actions": "display: none",
     ".nosidebar .inline-tabs-placeholder": "width: 75px",
     ".pane-header": "padding: 0 8px",
@@ -48,22 +62,36 @@
     ".monaco-list-row": "border-radius: 4px;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
-  "editor.scrollbar.vertical": "hidden",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "workbench.activityBar.location": "top",
-  "window.menuBarVisibility": "hidden",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "apc.monospace.font.family": "JetBrains Mono",
-  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗セ×፝֟͜×🥀",
-  "update.mode": "manual",
-  "workbench.colorTheme": "Bearded Theme Vivid Black",
-  "window.newWindowProfile": "Padrão",
+  // Barra Superior
+  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗セ🥀",
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "compact",
+  "window.density.editorTabHeight": "compact",
+  "window.commandCenter": false,
+
+  "errorLens.statusBarColorsEnabled": true,
+  // Git
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "diffEditor.hideUnchangedRegions.enabled": true
+
+  // Animação
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "workbench.reduceMotion": "off",
+  // Papel de Parede
+  "background.windowBackgrounds": [
+    "c:/Users/Administrator/Pictures/1351415.png"
+  ],
+
+  "background.backgroundBlur": ["6px", "0", "0", "0"],
+
+  "editor.formatOnSave": true,
+  "window.newWindowProfile": "Padrão",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false
 }
