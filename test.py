@@ -175,17 +175,9 @@ def test():
         print('Fim')
 
 def test2():
-    maipeso = menpeso = 0
-    pessoas = [['Ana',100],['Paulo', 21],['Luiz',100], ['Jonas', 11]]
+    valores = list[range(4,11)] # Valores recebem 'lista' de 4 a 10
+    print(f'{valores}')
 
-                
-    
-    print(f'Maior peso {maipeso}Kg de ',end='')
-    '''for pessoa in nome_maipeso:
-        print(f'{pessoa}',end= ' ')'''
-    print(f'\nMenor peso {menpeso}Kg de ',end='')
-    '''for pessoa in nome_menpeso:
-        print(f'{pessoa}',end= ' ')'''
 if __name__ == "__main__":
     test2()
 '''{
