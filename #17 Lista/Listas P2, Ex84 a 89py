@@ -370,10 +370,9 @@ def Ex89():
         '|99 retorna lista',
         '|0 Finalizar Tarefas',
     ]
-    for t in tab:
-        print(t)
-    
     while True:
+        for t in tab:
+            print(t)
         cond = int(input('Mostra notas de Aluno: '))
         if cond == 99:
             print(f'{'∿∿ '}{'Medias dos Alunos'}{' ∿∿'}')
