@@ -175,11 +175,32 @@ def test():
         print('Fim')
 
 def test2():
-    valores = list[range(4,11)] # Valores recebem 'lista' de 4 a 10
-    print(f'{valores}')
+    print(f'{'∿∿∿∿∿> '}{'Todas as Notas'}{' <∿∿∿∿∿'}')
+    print('—-'*14)
+    print(f'{'Nome':<6}{'Media':>9}{'Situação':>12}')
+    print('—-'*14)
+    
+    print(f'{'Cleiton':<10}{'3.8'}',end='')
+    print(f'{'Reprovado':^19}')
+    print(f'{'Notas > 9.1 | 8.5 | 9.1 | 4.1'}')
+    print('->'*14)
 
+    print(f'{'Cleiton':<10}{'3.8'}',end='')
+    print(f'{'Recuperação':^20}')
+    print(f'{'Notas > 9.1 | 8.5 | 9.1 | 4.1'}')
+    print('<-'*14)
+
+    print(f'{'Cleiton':<10}{'3.8'}',end='')
+    print(f'{'Aprovado':^18}')
+    print(f'{'Notas > 9.1 | 8.5 | 9.1 | 4.1'}')
+    print('->'*14)
+
+def test3():
+    dados =[]
+    dados.append(str(input('Nome aluno: ')).strip().split()[0])
+    print(dados)
 if __name__ == "__main__":
-    test2()
+    test3()
 '''{
   "editor.fontSize": 20,
   "editor.letterSpacing": -0.2,

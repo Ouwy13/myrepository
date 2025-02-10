@@ -35,8 +35,7 @@
   // Status Bar abaixo
   "workbench.statusBar.visible": false,
   // Terminal
-  "terminal.integrated.fontFamily": "IBM Plex Mono",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "GeistMono Nerd Font",
   // Apc++
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
