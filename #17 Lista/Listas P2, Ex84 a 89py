@@ -445,35 +445,36 @@ def Ex89():
         # Tabela com todas as notas
         elif cond == 2:
             while True:
-                print(f'{'∿∿ '}{'Media dos Alunos 📓'}{' ∿∿'}')
+                print(f'{'∿∿ '}{c["32"]}{'Media dos Alunos ✅'}{c["n"]}{' ∿∿'}')
                 print('—-'*12)
                 print(f'{'Num':<3}{'Nome':>6}{'Média':>12}')
                 print('—-'*12)
                 for n,dado in enumerate(cadastro):
-                    print(f'|{'0' if n+1 <=9 else ''}{n+1}  {dado[0]:<10}{dado[1]:>6.1f}')
+                    print(f'{c["32"]}|{c["n"]}{'0' if n+1 <=9 else ''}{n+1}  {dado[0]:<10}{c["32"]}>{c["n"]}{dado[1]:>4.1f}')
                 print('—-'*12)
-                print('|99 Todas as Notas')
-                print('|0 Volta para Menu')
+                print(f'{c["32"]}|{c["n"]}99 Todas as Notas')
+                print(f'{c["32"]}|{c["n"]}0 Volta para Menu')
                 # Pergunta para saber qual aluno 
                 while True:
                     try:
-                        cond = int(input('Ver Aluno: '))
+                        cond = int(input(f'{c["32"]}>{c["n"]}Ver Aluno:{c["32"]} '))
                         if cond > totaln and cond != 99:
-                            print('Aluno não registrado!')
-                        else:
+                            print(f'{c["31"]}Aluno não registrado!{c["n"]}')
+                        else:   
                             break
                     except ValueError:
-                        print('Somente Numeros!')
-            
+                        print(f'{c["31"]}Somente Numeros!|—•››››∿∿««{c["n"]}')
+                print(f'{c["n"]}',end='')
                 if cond == 99:
+                    system('cls')
                     cont = 0
-                    print(f'{'∿∿∿∿∿> '}{'Todas as Notas'}{' <∿∿∿∿∿'}')
+                    print(f'{'>>>>>> '}{c["34"]}{'Todas as Notas'}{c['n']}{' <<<<<<'}')
                     print('—-'*14)
                     print(f'{'Nome':<6}{'Media':>9}{'Situação':>12}')
                     print('—-'*14)
                     while cont < totaln:
                         # Nome e Media
-                        print(f'{cadastro[cont][0]:<10}{cadastro[cont][1]}',end='')
+                        print(f'{c["34"]}|{c["n"]}{cadastro[cont][0]:<8}{c["34"]}> {c["n"]}{cadastro[cont][1]}',end='')
                         # Situação
                         if 4 <= cadastro[cont][1] < 6:
                             print(f'{c['33']}{'Recuperação':^20}{c['n']}') 
@@ -482,7 +483,7 @@ def Ex89():
                         else:
                             print(f'{c['32']}{'Aprovada':^18}{c['n']}')
                         # Notas
-                        print('Notas > ',end='')
+                        print(f'{c["34"]}>{c["n"]}Notas{c["34"]} {c["n"]}',end='')
                         for nota in cadastro[cont][2]:
                             if 4 <= nota < 6:
                                 print(f'{c['33']}{nota}{c['n']}',end=' | ')
@@ -490,16 +491,13 @@ def Ex89():
                                 print(f'{c['31']}{nota}{c['n']}',end=' | ')
                             else:
                                 print(f'{c['32']}{nota}{c['n']}',end=' | ')
-                        print('\n',end='')
-                        if cont % 2 == 0:
-                            print('->'*14)
-                        else:
-                            print('<-'*14)
+                        print(f'\n',end='')
+                        print('∿∿'*14)
                         cont +=1
                     i = input('Enter continuar...')
                     system('cls')
                 elif cond > 0:
-                    print(f'{cadastro[cond-1][0]} suas notas: ',end='')
+                    print(f'{c["32"]}> {c['n']}{cadastro[cond-1][0]} suas notas: ',end='')
                     for nota in cadastro[cond-1][2]:
                         if 4 <= nota < 6:
                             print(f'{c['33']}{nota}{c['n']}',end=' | ')

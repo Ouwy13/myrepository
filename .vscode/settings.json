@@ -37,6 +37,12 @@
   // Terminal
   "terminal.integrated.fontFamily": "GeistMono Nerd Font",
   "terminal.integrated.cwd": "",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+
   // Apc++
   "apc.electron": {
     "titleBarStyle": "hiddenInset",

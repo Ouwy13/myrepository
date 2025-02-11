@@ -265,3 +265,38 @@ if __name__ == "__main__":
   "apc.monospace.font.family": "JetBrains Mono",
   "window.title": "VSCode do Zé 🤙"
 }'''
+
+'''if cond == 99:
+                    system('cls')
+                    cont = 0
+                    print(f'{'∿∿∿∿∿> '}{c["34"]}{'Todas as Notas'}{c['n']}{' <∿∿∿∿∿'}')
+                    print('—-'*14)
+                    print(f'{'Nome':<6}{'Media':>9}{'Situação':>12}')
+                    print('—-'*14)
+                    while cont < totaln:
+                        # Nome e Media
+                        print(f'{c["34"]}|{c["n"]}{cadastro[cont][0]:<8}{c["34"]}> {c["n"]}{cadastro[cont][1]}',end='')
+                        # Situação
+                        if 4 <= cadastro[cont][1] < 6:
+                            print(f'{c['33']}{'Recuperação':^20}{c['n']}') 
+                        elif cadastro[cont][1] < 4:
+                            print(f'{c['31']}{'Reprovado':^19}{c['n']}')
+                        else:
+                            print(f'{c['32']}{'Aprovada':^18}{c['n']}')
+                        # Notas
+                        print(f'{c["34"]}>{c["n"]}Notas{c["34"]} {c["n"]}',end='')
+                        for nota in cadastro[cont][2]:
+                            if 4 <= nota < 6:
+                                print(f'{c['33']}{nota}{c['n']}',end=' | ')
+                            elif nota < 4:
+                                print(f'{c['31']}{nota}{c['n']}',end=' | ')
+                            else:
+                                print(f'{c['32']}{nota}{c['n']}',end=' | ')
+                        print('\n',end='')
+                        if cont % 2 == 0:
+                            print(f'∿∿'*14)
+                        else:
+                            print(f'∿∿'*14)
+                        cont +=1
+                    i = input('Enter continuar...')
+                    system('cls')'''
