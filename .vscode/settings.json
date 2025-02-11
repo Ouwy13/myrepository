@@ -36,6 +36,7 @@
   "workbench.statusBar.visible": false,
   // Terminal
   "terminal.integrated.fontFamily": "GeistMono Nerd Font",
+  "terminal.integrated.cwd": "",
   // Apc++
   "apc.electron": {
     "titleBarStyle": "hiddenInset",

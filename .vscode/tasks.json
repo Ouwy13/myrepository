@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rodar Código Python Limpo",
+      "type": "shell",
+      "command": "cls && python \"Laços de Repetição P3 Ex66-71.py\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

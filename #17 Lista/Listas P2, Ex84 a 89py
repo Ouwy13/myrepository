@@ -344,10 +344,10 @@ def Ex89():
         f'{'∿∿'*10}',
         f'{c["35"]}{'Menu de tarefa 😊':^20}{c["n"]}',
         f'{'∿∿'*10}',
-        f'|{c["36"]}1{c["n"]} mostra lista ',
-        f'|{c["36"]}2{c["n"]} mostra notas',
-        f'|{c["36"]}3{c["n"]} Mais alunos',
-        f'|{c["36"]}0{c["n"]} Finalizar Tarefas',
+        f'{c["35"]}|{c["n"]}1 mostra lista ',
+        f'{c["35"]}|{c["n"]}2 mostra notas',
+        f'{c["35"]}|{c["n"]}3 Mais alunos',
+        f'{c["35"]}|{c["n"]}0 Finalizar Tarefas',
         f'{'——'*10}',
     ]
     inf = [
@@ -420,7 +420,7 @@ def Ex89():
         while True:
             try:
                 while True:
-                    cond = int(input(f'Qual tarefa:{c["36"]} '))
+                    cond = int(input(f'Qual tarefa:{c["35"]} '))
                     if cond > 3:
                         print(f'{c["31"]}Operação invalida!{c["n"]}')
                     else:
@@ -429,23 +429,23 @@ def Ex89():
             except ValueError:
                 print(f'{c["31"]}Somente Numeros!{c["n"]}')
         system('cls')
-            
+        print(f'{c["n"]}')    
         # Media dos Alunos
         if cond == 1:
             # Nota de determinado aluno
-            print(f'{'∿∿ '}{'Media dos Alunos'}{' ∿∿'}')
+            print(f'{'∿∿ '}{c['33']}{'Media dos Alunos✍️'}{c["n"]}{' ∿∿'}')
             print('—-'*12)
             print(f'{'Num':<3}{'Nome':>6}{'Média':>12}')
             print('—-'*12)
             for n,dado in enumerate(cadastro):
-                print(f'|{'0' if n+1 <=9 else ''}{n+1}  {dado[0]:<10}{dado[1]:>6.1f}')
+                print(f'{c["33"]}|{c['n']}{'0' if n+1 <=9 else ''}{n+1}  {dado[0]:<10}{c["33"]}>{c["n"]}{dado[1]:>4.1f}')
             print('—-'*12)
             i = input('Enter continuar...')
             system('cls')
         # Tabela com todas as notas
         elif cond == 2:
             while True:
-                print(f'{'∿∿ '}{'Media dos Alunos'}{' ∿∿'}')
+                print(f'{'∿∿ '}{'Media dos Alunos 📓'}{' ∿∿'}')
                 print('—-'*12)
                 print(f'{'Num':<3}{'Nome':>6}{'Média':>12}')
                 print('—-'*12)
