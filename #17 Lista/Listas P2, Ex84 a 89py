@@ -339,13 +339,13 @@ def Ex89():
     cadastro = list()
     dados = []
     notas = []
-    totaln = ativo = 0
+    totaln = ativo = cond = 0
     tab = [
         f'{'∿∿'*10}',
         f'{c["35"]}{'Menu de tarefa 😊':^20}{c["n"]}',
         f'{'∿∿'*10}',
-        f'{c["35"]}|{c["n"]}1 mostra lista ',
-        f'{c["35"]}|{c["n"]}2 mostra notas',
+        f'{c["35"]}|{c["n"]}1 Mostra lista ',
+        f'{c["35"]}|{c["n"]}2 Mostra notas',
         f'{c["35"]}|{c["n"]}3 Mais alunos',
         f'{c["35"]}|{c["n"]}0 Finalizar Tarefas',
         f'{'——'*10}',
@@ -376,7 +376,7 @@ def Ex89():
                 while True:
                     try:
                         while len(notas) <= 3:
-                            nota = float(input(f'›{c['36']}{len(notas)+1}ª{c["n"]} Nota : '))
+                            nota = float(input(f'›{c["36"]}{len(notas)+1}ª{c["n"]} Nota : '))
                             if nota > 10:
                                 print(f'{c["31"]}Nota invalida!{c["n"]}')
                             else:
@@ -406,7 +406,6 @@ def Ex89():
                         break
                     else:
                         print(f'{c["31"]}Condição [S/N]{c["n"]}')
-                
                 if cond == 'N':
                     ativo = 1
                     print('Analizando..')
@@ -463,39 +462,52 @@ def Ex89():
                         else:   
                             break
                     except ValueError:
-                        print(f'{c["31"]}Somente Numeros!|—•››››∿∿««{c["n"]}')
+                        print(f'{c["31"]}Somente Numeros!{c["n"]}')
                 print(f'{c["n"]}',end='')
                 if cond == 99:
                     system('cls')
                     cont = 0
-                    print(f'{'>>>>>> '}{c["34"]}{'Todas as Notas'}{c['n']}{' <<<<<<'}')
-                    print('—-'*14)
-                    print(f'{'Nome':<6}{'Media':>9}{'Situação':>12}')
-                    print('—-'*14)
+                    print('—='*18)
+                    print(f'∿∿{'∿∿'*3}> {c["34"]}{'Todas as Notas 📖'}{c["n"]} <{'∿∿'*3}∿')
+                    print('=—'*18)
+                    sit = [
+                        f'> Situações',
+                        '✅ - Aprovado✔️ 🎉',
+                        '🔄️ - Recuperação🤔📖',
+                        '⛔ - Reprovado💢😔',
+                    ]
+                    
+                    for s in sit:
+                        print(s)
+                    print('——'*18)
+                    print(f'{'Nome':<6}{'Notas':>14}{'Situação':>16}')
+                    print('——'*18)
                     while cont < totaln:
-                        # Nome e Media
-                        print(f'{c["34"]}|{c["n"]}{cadastro[cont][0]:<8}{c["34"]}> {c["n"]}{cadastro[cont][1]}',end='')
-                        # Situação
-                        if 4 <= cadastro[cont][1] < 6:
-                            print(f'{c['33']}{'Recuperação':^20}{c['n']}') 
-                        elif cadastro[cont][1] < 4:
-                            print(f'{c['31']}{'Reprovado':^19}{c['n']}')
-                        else:
-                            print(f'{c['32']}{'Aprovada':^18}{c['n']}')
+                        # Nome
+                        print(f'|{cadastro[cont][0]:<8}> ',end='')
+                        
                         # Notas
-                        print(f'{c["34"]}>{c["n"]}Notas{c["34"]} {c["n"]}',end='')
                         for nota in cadastro[cont][2]:
                             if 4 <= nota < 6:
-                                print(f'{c['33']}{nota}{c['n']}',end=' | ')
+                                print(f'{c['33']}{nota}{c['n']}',end=' ')
                             elif nota < 4:
-                                print(f'{c['31']}{nota}{c['n']}',end=' | ')
+                                print(f'{c['31']}{nota}{c['n']}',end=' ')
                             else:
-                                print(f'{c['32']}{nota}{c['n']}',end=' | ')
-                        print(f'\n',end='')
-                        print('∿∿'*14)
+                                print(f'{c['32']}{nota}{c['n']}',end=' ')
+                        
+                        # Situação
+                        if 4 <= cadastro[cont][1] < 6:
+                            print(f' | {'🔄🤔'}') 
+                        elif cadastro[cont][1] < 4:
+                            print(f' | {'⛔😔'}')
+                        else:
+                            print(f' | {'✅🤩'}')
+                        #(f'\n',end='')
+                        print('∿∿'*18)
                         cont +=1
                     i = input('Enter continuar...')
                     system('cls')
+
                 elif cond > 0:
                     print(f'{c["32"]}> {c['n']}{cadastro[cond-1][0]} suas notas: ',end='')
                     for nota in cadastro[cond-1][2]:
@@ -515,18 +527,20 @@ def Ex89():
                         print(f'{c['32']}Aprovada{c['n']}')
                     i = input('Enter continuar...')
                     system('cls')
-                
                 else:
                     system('cls')
                     break
         # Adicionar Alunos
         elif cond == 3:
-            print('Adicione mais Alunos')
+            print('-—'*12)
+            print(f'{c["36"]}Adicione mais Alunos 🤔{c["n"]}')
+            print('—-'*12)
+            print(f'{c["36"]}>{c["n"]} Informe os dados..📖')
             ativo = 0
         # Encerra Programa
         else:
             break
-    print('Fim do Programa')      
+    print('Fim do Programa 😊')      
 
 if __name__ == "__main__":
     Ex89()
