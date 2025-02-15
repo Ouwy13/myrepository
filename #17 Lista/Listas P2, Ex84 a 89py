@@ -171,6 +171,7 @@ def Ex86p1():
     print('\n',end='')
     for valor in matrix[2]:
         print(f'[ {valor} ]',end='')
+
 def Ex86p2():
     # Com o vidio
     from time import sleep
@@ -193,6 +194,7 @@ def Ex86p2():
         for pos in range (0,3):
             print(f'[{matrix[coluna][pos]:^3}]',end='')
         print('') # Pular p. proxima linha
+
 def Ex87():
     from time import sleep
     matrix = [[0,0,0],[0,0,0],[0,0,0]] # 3 colunas com 3 numeros
@@ -252,7 +254,6 @@ def Ex87():
                 maior = matrix[1][c]
     print(f'Maior da 2ª linha {maior}.')
 
-    
 def Ex88():
     from random import randint
     from time import sleep
@@ -367,7 +368,13 @@ def Ex89():
                 # Nome aluno
                 while True:
                     try:
-                        dados.append(str(input(f'Nome {totaln+1}ª aluno: ')).strip().split()[0])
+                        while True:
+                            nome = (str(input(f'Nome {totaln+1}ª aluno: ')).strip().capitalize().split()[0])
+                            if nome.isalpha():
+                                dados.append(nome)
+                                break
+                            else:
+                                print(f'{c["31"]}Deve conter apenas letras!{c["n"]}')
                         break
                     except IndexError:
                         print(f'{c["31"]}Informe o Aluno!{c["n"]}')
@@ -541,6 +548,6 @@ def Ex89():
         else:
             break
     print('Fim do Programa 😊')      
-
+ 
 if __name__ == "__main__":
     Ex89()
