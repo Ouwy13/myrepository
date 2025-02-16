@@ -247,26 +247,25 @@ def Ex60():
     print('Fatorial de um numero')
     num = int(input('Informe o numero: '))
     factor =1
-    print(f'{num}!',end=' ')
-    for n in range(1, num+1):
-        print(f' {n} ', end='x')
+    print(f'{num}!',end='=')
+    for n in range(num, 0, -1):
+        print(f'  {n} ', end='x')
         factor *= n
     print(f' = {factor}')
    
    # Form While
     print('Fatorial de um numero')
     num = int(input('Informe o numero: '))
-    c = num
     factor = 1
     print(f'{num}!',end= ' = ')
-    while c > 0: # Enquanto contador menor que 0 fassa..
-        print(c, end = '')
-        if c > 1: # se contador for menor que 1 add igual '='
+    while num > 0: # Enquanto contador menor que 0 fassa..
+        print(num, end = '')
+        if num > 1: # se contador for menor que 1 add igual '='
             print(end= ' X ')
         else:
             print(end= ' = ')
-        factor *= c # factor = factor * contador
-        c -= 1 # vai diminuir o contador
+        factor *= num # factor = factor * contador
+        num -= 1
     print(factor)
 
 def Ex61():
@@ -397,6 +396,6 @@ def Ex65():
     print(f'Você digitou {todos} valores e a média foi {media}')
     print(f'O maior foi {maior} e o menor foi {menor}')
 if __name__ == "__main__":
-    Ex65()
+    Ex60()
     
     

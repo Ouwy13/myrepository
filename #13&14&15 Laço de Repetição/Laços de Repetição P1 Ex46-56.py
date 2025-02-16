@@ -10,7 +10,7 @@ def Teoria():
     for c in range(6, 0, -1): # contar de forma decresente
         print(c)
     for c in range(0, 7, 2): # contando de 1 a 6 fatiando por 2
-        print(c)
+        print(c)   
 
     from time import sleep
     num = int(input('Informe um valor: '))
@@ -293,4 +293,4 @@ def Ex02D():
         print('*'*triang)
          
 if __name__ == "__main__":
-    Ex02D()
+    Teoria()
