@@ -196,11 +196,27 @@ def test2():
     print('->'*14)
 
 def test3():
-    frase = 'Curso em Vidio Python'
-    print()
-    print(frase[::-1])
+    while True:
+        while True:
+            print('——'*10)
+            while True:
+                try:
+                    cond = str(input(f'> Continuar [S/N]: ')).strip().upper()[0]
+                    break                        
+                except IndexError:
+                        print(f'Digite a condição')
+            if cond in 'SN':
+                break
+            else:
+                print(f'Condição [S/N]')
+        if cond == 'N':
+            break
+    print('FIM')
+
+def test4():
+    
 if __name__ == "__main__":
-    test3()
+    test4()
 '''{
   "editor.fontSize": 20,
   "editor.letterSpacing": -0.2,

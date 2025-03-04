@@ -13,6 +13,7 @@ def Teoria():
     lanche.pop(3) # Remove item do index 3
     lanche.remove('Pizza') # Remove item pelo nome
     lanche.pop() # Remove o ultimo item
+    
     if 'Pizza' in lanche: # Verifica se tiver o item
         lanche.remove('Pizza')
 

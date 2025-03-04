@@ -1,57 +1,56 @@
 def Teoria():
     # Lista dento de Listas
-    teste = list()
-    teste.append('Gustavo')
-    teste.append(40)
-    galera = list()
+    dados = ['Gustavo', 40]
+    cadastros = list()
     # Uma lista dentro de outra lista
-    '''galera.append(teste) ''' # Sem a copia
-    galera.append(teste[:]) # Feito a copia
+    '''cadastros.append(dados) ''' # Sem a copia
+    cadastros.append(dados[:]) # Feito a copia
     # Quando não é feito a copia qualquer alteração
     # altera tbm os valores
     '''Saida: [['Maria', 21], ['Maria', 21]]'''
 
-    # Modificando os itens do teste
-    teste[0] = 'Maria' 
-    teste[1] = 21
-    galera.append(teste[:])
-    print(f'{galera}')
+    # Modificando os itens do dados
+    dados[0] = 'Maria' 
+    dados[1] = 21
+    cadastros.append(dados[:])
+    print(f'{cadastros}')
     '''Saida: [['Gustavo', 40], ['Maria', 21]] '''
 
 def Teoria2():
     # Lista dentro de lista
-    galera = [['Jonas', 17],['Ana', 21],['Luiz',32],['Juana',12]]
-    print(galera)
-    print(galera[0]) 
-    print(galera[0][0]) 
-    print(galera[2][1]) 
+    cadastros = [['Jonas', 17],['Ana', 21],['Luiz',32],['Juana',12]]
+    print(cadastros)
+    print(cadastros[0]) 
+    print(cadastros[0][0]) 
+    print(cadastros[2][1])
+    print(cadastros[3][0])
 
     # Exibir cada conjunto de itens 
-    for pessoa in galera:
-        print(pessoa)
+    for dados in cadastros:
+        print(dados)
     # Exibir cada conjunto de itens determinando qual
-    for pessoa in galera:
-        print(f'{pessoa[0]} tem {pessoa[1]} anos')
+    for dados in cadastros:
+        print(f'{dados[0]} tem {dados[1]} anos')
 
 def Teoria3():
-    galera = list()
+    cadastros = list()
     dados = list()
-    # Salvando dados em galera
+    # Salvando dados em cadastros
     for c in range (0,3):
         dados.append(str(input('Nome: ')))
         dados.append(int(input('Idade: ')))
-        galera.append(dados[:]) # Galera recebe uma copia dos dados
+        cadastros.append(dados[:]) # Galera recebe uma copia dos dados
         dados.clear() # Limpa dos dados p. recomeça
     
-    # Exibindo dados da galera
-    for pessoa in galera: 
-        print(f'{pessoa[0]} tem {pessoa[1]} anos.')
+    # Exibindo dados da cadastros
+    for dados in cadastros: 
+        print(f'{dados[0]} tem {dados[1]} anos.')
 
     # Exibindo maiores de 18 anos
     m18 = 0
-    for pessoa in galera:
-        if pessoa[1] >= 18:
-            print(f'{pessoa[0]} tem mais de 18 anos')
+    for dados in cadastros:
+        if dados[1] >= 18:
+            print(f'{dados[0]} tem mais de 18 anos')
             m18 +=1
     print(f'Temos {m18} maiores de idade')
 

@@ -2,7 +2,7 @@ def Teoria():
     # Tuplas são imutaveis
     # Pode ser de varios tipos de dados
     # Fatiamento
-    lanche = ('Hamburge', 'Suco', 'Pizza', 'Pudim')
+    lanche = ('c', 'a', 'd', 'b')
     print(lanche) # Exibi a lista
     print(lanche[1]) # Exibi o item do index 1
     print(lanche[-2]) # Exibi o item do index -2/ o item voltando da lista 'Pizza'
@@ -24,11 +24,11 @@ def Teoria():
         print(lanche[cont]) # exibir lanche[na posição 'cont']
 
         # Exibição com posição
-        for comida, pos in enumerate(lanche): #exibi o item com sua posição enumerate()
+        for pos, comida in enumerate(lanche): #exibi o item com sua posição enumerate()
             print(f'{comida} na posição {pos}')
         
         for cont in range (0, len(lanche)): #exibi o item com sua posição cont
-            print(f'{lanche} na posição {cont}')
+            print(f'{lanche[cont]} na posição {cont}')
         
         # Exibição em ordem de tamnho
         print(sorted(lanche)) # sorted mostra a tupla em ordem do maior p. menor 
@@ -235,4 +235,4 @@ def Ex77():
                 
         
 if __name__ == "__main__":
-    Ex73()
+    Ex75()

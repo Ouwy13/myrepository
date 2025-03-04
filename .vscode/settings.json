@@ -2,7 +2,8 @@
   "workbench.colorTheme": "Bearded Theme Vivid Black",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Jetbrains Mono",
+  "fonted.font": "Jetbrains Mono",
   "editor.fontSize": 20,
   //Expaçamento de tecla
   "editor.letterSpacing": 0,
@@ -69,7 +70,7 @@
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
   // Barra Superior
-  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗セ🥀",
+  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗🥀么",
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "compact",
   "window.density.editorTabHeight": "compact",
