@@ -214,7 +214,12 @@ def test3():
     print('FIM')
 
 def test4():
-    
+    nome = str(input('Qual seu nome: '))
+    if nome.lower() == 'josé':
+      print('Belo nome! ')
+    else:
+       print('Marromeno')
+    print(f'Bom dia, {nome}')
 if __name__ == "__main__":
     test4()
 '''{

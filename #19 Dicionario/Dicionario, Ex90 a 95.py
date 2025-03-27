@@ -537,5 +537,7 @@ def Ex95():
             c = str(input(f'{c['33']}>{c['n']} Enter continuar...'))
             system('cls')
 
+
+
 if __name__ == "__main__":
     Ex95()  
