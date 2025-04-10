@@ -100,5 +100,5 @@
   "window.newWindowProfile": "Padrão",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.enablePreview": false,
-  "workbench.layoutControl.enabled": false
+  "workbench.layoutControl.enabled": true
 }
