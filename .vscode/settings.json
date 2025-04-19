@@ -175,6 +175,5 @@
       "bold": false,
       "italic": false
     }
-  ],
-  "terminal.integrated.hideOnStartup": "always"
+  ]
 }
