@@ -62,3 +62,22 @@ c = {
     '36':'\033[1;36m',#azul ciano
 
 }
+
+def c(color=""):
+        """ --> Função colorir terminal\n
+            1 - vermelho| 5 - roxo\n       
+            2 - verde   | 6 - azul claro\n         
+            3 - amarelo | 7 - branco\n
+            4 - azul\n  |        
+            paremetro numerico\n
+            Text 30/Back 40\n
+            Ex: \033[31m or \033[41m
+        """
+        if color == "":
+            return "\033[m"
+        else:
+            if color > 30:
+                return f"\033[1;{color}m"
+            else:
+                return f"\033[1;3{color}m"   
+print(f"{c(7)} Oiee")

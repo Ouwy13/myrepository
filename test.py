@@ -220,8 +220,14 @@ def test4():
     else:
        print('Marromeno')
     print(f'Bom dia, {nome}')
+
+def test5():
+    def altera():
+        global a
+        a = 7
+    print(a)
 if __name__ == "__main__":
-    test4()
+    test5()
 '''{
   "editor.fontSize": 20,
   "editor.letterSpacing": -0.2,
