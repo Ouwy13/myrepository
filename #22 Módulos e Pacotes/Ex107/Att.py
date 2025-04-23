@@ -1,4 +1,4 @@
-import moeda
+from Ex107 import moeda
 from moeda import LeiaFloat
 
 valor = LeiaFloat("Diga o preço: R$ ")
