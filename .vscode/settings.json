@@ -1,14 +1,14 @@
 {
-  "workbench.colorTheme": "Bearded Theme Vivid Black",
+  "custom-ui-style.font.monospace": "DankMono Nerd Font",
+  "custom-ui-style.font.sansSerif": "DankMono Nerd Font",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
-  "editor.fontFamily": "Jetbrains Mono",
-  "fonted.font": "Jetbrains Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 20,
   //Expaçamento de tecla
   "editor.letterSpacing": 0,
   //Expaçamento de tinha
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.8,
   //Ligatures
   "editor.fontLigatures": true,
   //Tamanho do testo na tela
@@ -24,7 +24,6 @@
   "explorer.confirmDelete": false,
   // Diretorio do arquivo acima
   "breadcrumbs.enabled": false,
-
   "workbench.editor.showTabs": "none", //Barra de codigos abertos
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
@@ -36,15 +35,14 @@
   // Status Bar abaixo
   "workbench.statusBar.visible": false,
   // Terminal
-  "terminal.integrated.fontFamily": "GeistMono Nerd Font",
-  "terminal.integrated.cwd": "GeistMono Nerd Font",
+  "terminal.integrated.fontFamily": "DankMono Nerd Font",
+  "terminal.integrated.cwd": "DankMono Nerd Font",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-
-  // Apc++
+  /*// Apc++
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
     "frame": false
@@ -56,7 +54,6 @@
   "apc.listRow": {
     "height": 24
   },
-
   "apc.stylesheet": {
     ".title-label > h2": "display: none",
     ".custom-hover > h2": false,
@@ -69,21 +66,21 @@
     ".monaco-list-row": "border-radius: 4px;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
+  */
+  
   // Barra Superior
   "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗🥀么",
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "compact",
   "window.density.editorTabHeight": "compact",
   "window.commandCenter": false,
-
   "errorLens.statusBarColorsEnabled": true,
   // Git
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-
   // Animação
-  "editor.guides.highlightActiveIndentation": false,
+  "editor.guides.highlightActiveIndentation": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
@@ -91,17 +88,15 @@
   "workbench.reduceMotion": "off",
   // Papel de Parede
   "background.windowBackgrounds": [
-    "c:/Users/Administrator/Pictures/1351415.png"
+    "c:/Users/ᒎᗝᔕᗴ亗セ/Pictures/1351415.png"
   ],
-
   "background.backgroundBlur": ["6px", "0", "0", "0"],
-
   "editor.formatOnSave": true,
-  "window.newWindowProfile": "Padrão",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.enable": false,
+  
   "better-comments.tags": [
     {
       "tag": "!",
@@ -175,5 +170,39 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+  /*"animations.Install-Method": "Custom UI Style",
+  "custom-ui-style.external.imports": [
+    "file:///c:/Users/ᒎᗝᔕᗴ亗セ/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],*/
+  "workbench.colorTheme": "Bearded Theme Vivid Black",
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #FFFFFF 10%, #FFFFFF 100%)"
+  },
+  "animations.Install-Method": "Custom UI Style",
+  "custom-ui-style.external.imports": [
+    "file:///c:/Users/ᒎᗝᔕᗴ亗セ/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "workbench.editor.empty.hint": "hidden",
+  "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+  "background.autoInstall": false
 }
