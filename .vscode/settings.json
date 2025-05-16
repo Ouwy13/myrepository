@@ -1,47 +1,47 @@
 {
-  "custom-ui-style.font.monospace": "DankMono Nerd Font",
-  "custom-ui-style.font.sansSerif": "DankMono Nerd Font",
+  "custom-ui-style.font.monospace": "GeistMono Nerd Font Mono",
+  "custom-ui-style.font.sansSerif": "GeistMono Nerd Font Mono",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "symbols",
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.fontSize": 20,
+  "workbench.iconTheme": "symbols",  
+  "editor.fontFamily": "DankMono Nerd Font", // Fonte usada no editor
+  "editor.fontSize": 20, // Tamanho da fonte no editor
   //Expaçamento de tecla
-  "editor.letterSpacing": 0,
+  "editor.letterSpacing": 0, // Espaçamento entre letras
   //Expaçamento de tinha
-  "editor.lineHeight": 1.8,
-  //Ligatures
-  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.8, // Altura da linha
+  //Ligatures 
+  "editor.fontLigatures": true, // Ativa ligaduras na fonte
   //Tamanho do testo na tela
-  "editor.rulers": [80, 120],
+  "editor.rulers": [80, 120], // Regras visuais para guiar o comprimento das linhas
   // Borda da linha
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.labelFormat": "short",
+  "editor.renderLineHighlight": "gutter", // Destaca a linha atual no editor
+  "workbench.editor.labelFormat": "short", // Formato dos rótulos dos arquivos abertos
   // Pasta
-  "explorer.compactFolders": false,
-  "explorer.fileNesting.enabled": true,
-  "workbench.tree.indent": 18,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false, // Desativa a compactação de pastas no explorador
+  "explorer.fileNesting.enabled": true, // Ativa o agrupamento de arquivos relacionados
+  "workbench.tree.indent": 18, // Define o espaçamento de indentação na árvore do explorador
+  "explorer.confirmDragAndDrop": false, // Desativa a confirmação ao arrastar e soltar arquivos
+  "explorer.confirmDelete": false, // Desativa a confirmação ao excluir arquivos
   // Diretorio do arquivo acima
   "breadcrumbs.enabled": false,
-  "workbench.editor.showTabs": "none", //Barra de codigos abertos
-  "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
-  "editor.minimap.autohide": true,
-  "editor.minimap.sectionHeaderFontSize": 10,
+  "workbench.editor.showTabs": "none", // Oculta as abas dos arquivos abertos
+  "workbench.activityBar.location": "top", // Move a barra de atividades para o topo
+  "workbench.sideBar.location": "right", // Move a barra lateral para a direita
+  "editor.minimap.autohide": true, // Oculta automaticamente o minimapa
+  "editor.minimap.sectionHeaderFontSize": 10, // Tamanho da fonte no cabeçalho do minimapa
   // Scroll
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "auto",
   // Status Bar abaixo
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": false, // Oculta a barra de status
   // Terminal
-  "terminal.integrated.fontFamily": "DankMono Nerd Font",
-  "terminal.integrated.cwd": "DankMono Nerd Font",
-  "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.fontFamily": "DankMono Nerd Font", // Fonte usada no terminal integrado
+  "terminal.integrated.gpuAcceleration": "on", // Ativa aceleração por GPU no terminal
+  "terminal.integrated.showExitAlert": false, // Desativa o alerta ao sair do terminal
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
+  
   /*// Apc++
   "apc.electron": {
     "titleBarStyle": "hiddenInset",
@@ -67,115 +67,44 @@
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
   },
   */
-  
+
   // Barra Superior
-  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗🥀么",
-  "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "compact",
-  "window.density.editorTabHeight": "compact",
+  "window.title": "𝓥𝓢𝓒𝓸𝓭𝓮 𝓭𝓸 𝓩𝐞́ 亗🥀么", // Título personalizado da janela
+  "window.titleBarStyle": "custom", // Estilo personalizado para a barra de título
+  "window.menuBarVisibility": "compact", // Exibe o menu em modo compacto
+  "window.density.editorTabHeight": "compact", // Altura compacta para as abas do editor
   "window.commandCenter": false,
   "errorLens.statusBarColorsEnabled": true,
   // Git
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
+  "git.enableSmartCommit": true, // Ativa o commit inteligente
+  "git.confirmSync": false, // Desativa a confirmação ao sincronizar
+  "git.autofetch": true, // Ativa o fetch automático
   // Animação
   "editor.guides.highlightActiveIndentation": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "editor.cursorBlinking": "smooth",
-  "workbench.reduceMotion": "off",
+  "editor.cursorSmoothCaretAnimation": "on", // Animação suave do cursor
+  "workbench.list.smoothScrolling": true, // Rolagem suave nas listas
+  "terminal.integrated.smoothScrolling": true, // Rolagem suave no terminal integrado
+  "editor.cursorBlinking": "smooth", // Animação suave de piscagem do cursor
+  "workbench.reduceMotion": "off", // Desativa a redução de movimento
   // Papel de Parede
-  "background.windowBackgrounds": [
-    "c:/Users/ᒎᗝᔕᗴ亗セ/Pictures/1351415.png"
-  ],
-  "background.backgroundBlur": ["6px", "0", "0", "0"],
-  "editor.formatOnSave": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "workbench.editor.enablePreview": false,
+  "background.windowBackgrounds": ["c:/Users/ᒎᗝᔕᗴ亗セ/Pictures/1351415.png"], // Imagem de fundo
+  "background.backgroundBlur": ["6px", "0", "0", "0"], // Desfoque no fundo
+  "editor.formatOnSave": true, // Formata o código automaticamente ao salvar
+  "diffEditor.hideUnchangedRegions.enabled": true, // Oculta regiões inalteradas no editor de diferenças
+  "workbench.editor.enablePreview": false, // Desativa a visualização de arquivos ao abrir
   "workbench.layoutControl.enabled": true,
-  "github.copilot.enable": false,
-  
+
   "better-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#FF2D00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#3498DB",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#98C379",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "@",
-      "color": "#0000FF", // Azul escuro
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "$",
-      "color": "#87CEFA", // Azul claro
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "%",
-      "color": "#00FFFF", // Azul ciano
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "&",
-      "color": "#FFFFFF", // Branco
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
+    { "tag": "!", "color": "#FF2D00", "bold": false, "italic": false }, // Comentários de alerta
+    { "tag": "?", "color": "#3498DB", "bold": false, "italic": false }, // Comentários de dúvida
+    { "tag": "//", "color": "#474747", "strikethrough": true }, // Comentários desativados
+    { "tag": "*", "color": "#98C379", "bold": false, "italic": false }, // Comentários de destaque
+    { "tag": "@", "color": "#0000FF", "bold": false, "italic": false }, // Comentários de referência
+    { "tag": "$", "color": "#87CEFA", "bold": false, "italic": false }, // Comentários de variáveis
+    { "tag": "%", "color": "#00FFFF", "bold": false, "italic": false }, // Comentários de porcentagem
+    { "tag": "&", "color": "#FFFFFF", "bold": false, "italic": false } // Comentários gerais
   ],
-  /*"animations.Install-Method": "Custom UI Style",
-  "custom-ui-style.external.imports": [
-    "file:///c:/Users/ᒎᗝᔕᗴ亗セ/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-  ],*/
-  "workbench.colorTheme": "Bearded Theme Vivid Black",
+  "workbench.colorTheme": "Bearded Theme Vivid Black", // Tema de cores
   "custom-ui-style.stylesheet": {
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
@@ -198,11 +127,13 @@
     ".title .monaco-icon-label.file-icon": "margin: 0 60px",
     ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #FFFFFF 10%, #FFFFFF 100%)"
   },
-  "animations.Install-Method": "Custom UI Style",
+  "animations.Install-Method": "Custom UI Style", // Método de instalação de animações
   "custom-ui-style.external.imports": [
     "file:///c:/Users/ᒎᗝᔕᗴ亗セ/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
-  "workbench.editor.empty.hint": "hidden",
-  "github.copilot.chat.codeGeneration.useInstructionFiles": false,
-  "background.autoInstall": false
+  "workbench.editor.empty.hint": "hidden", // Oculta dicas de editor vazio
+  "github.copilot.chat.codeGeneration.useInstructionFiles": false, // Desativa instruções do Copilot
+  "background.autoInstall": false, // Desativa a instalação automática de fundos
+  "github.copilot.suggest.enable": false, // Desativa sugestões do Copilot
 }
+

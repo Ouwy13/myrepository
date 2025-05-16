@@ -9,7 +9,6 @@ def resumo(valor=0, aumento=0, redução=0,sit=True):
     print(f"{aumento}% de aumento:{aumentar(valor,aumento, sit):>14}")
     print(f"{redução}% de redução:{diminuir(valor,redução, sit):>14}")
     print("—-"*14+"—")
-
 #$ Analize de  float
 def LeiaFloat(msg):
     while True:
@@ -29,12 +28,10 @@ def metade(valor=0, sit=True):
 def dobro(valor=0, sit=True):
     result =  valor * 2
     return situação(sit, result)
-    
 #$ Aumento por %
 def aumentar(valor=0, por=1, sit=True):
     result = valor + (valor * por / 100)
     return situação(sit, result)
-
 #$ Reduzir por %
 def diminuir(valor=0, por=1, sit=True):
     result = valor - (valor * por /100)
