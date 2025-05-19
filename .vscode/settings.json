@@ -87,7 +87,9 @@
   "editor.cursorBlinking": "smooth", // Animação suave de piscagem do cursor
   "workbench.reduceMotion": "off", // Desativa a redução de movimento
   // Papel de Parede
-  "background.windowBackgrounds": ["c:/Users/ᒎᗝᔕᗴ亗セ/Pictures/1351415.png"], // Imagem de fundo
+  "background.windowBackgrounds": [
+    "C:/Users/ᒎᗝᔕᗴ亗セ/Pictures/Design sem nome.png"
+  ], // Imagem de fundo
   "background.backgroundBlur": ["6px", "0", "0", "0"], // Desfoque no fundo
   "editor.formatOnSave": true, // Formata o código automaticamente ao salvar
   "diffEditor.hideUnchangedRegions.enabled": true, // Oculta regiões inalteradas no editor de diferenças
@@ -106,26 +108,25 @@
   ],
   "workbench.colorTheme": "Bearded Theme Vivid Black", // Tema de cores
   "custom-ui-style.stylesheet": {
-    ".notification-toast": "box-shadow: none !important",
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-    ".quick-input-widget": "top: 25vh !important",
-    ".quick-input-list .scrollbar": "display: none",
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-    ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-scrollable-element > .shadow.top": "display: none",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".sidebar": "border: none !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important",
-    ".monaco-editor .scroll-decoration": "display: none",
-    ".title-actions": "display: none !important",
+    ".notification-toast": "box-shadow: none !important", // Remove sombra das notificações
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important", // Remove sombra do seletor rápido
+    ".quick-input-widget": "top: 25vh !important", // Move o seletor rápido para baixo na tela
+    ".quick-input-list .scrollbar": "display: none", // Oculta a barra de rolagem do seletor rápido
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none", // Oculta ações rápidas no seletor rápido
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px", // Remove sombra e arredonda a busca
+    ".quick-input-titlebar": "background: #100B15 !important", // Altera a cor do topo do seletor rápido
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none", // Remove linha inferior do título do editor
+    ".monaco-scrollable-element > .shadow.top": "display: none", // Remove sombra superior de elementos roláveis
+    ".sidebar .title-label": "padding: 0 !important", // Remove espaçamento do título da barra lateral
+    ".sidebar": "border: none !important", // Remove borda da barra lateral
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important", // Remove contorno de listas não focadas
+    ".monaco-list-row.focused": "outline: none !important", // Remove contorno de linhas focadas em listas
+    ".monaco-editor .scroll-decoration": "display: none", // Remove decoração de rolagem do editor
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
     ".title .monaco-icon-label:after": "margin-right: 0",
     ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
     ".title .monaco-icon-label.file-icon": "margin: 0 60px",
-    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #FFFFFF 10%, #FFFFFF 100%)"
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #FFFFFF 10%, #FFFFFF 100%)",
   },
   "animations.Install-Method": "Custom UI Style", // Método de instalação de animações
   "custom-ui-style.external.imports": [
