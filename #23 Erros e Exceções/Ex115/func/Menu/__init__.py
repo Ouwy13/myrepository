@@ -39,11 +39,13 @@ def Menu_Princ(Color=7, animação=False):
 #$ Menu de Pessoas Cadastrdas
 def Menu_Cadastradas(Banco, Color=7, animação=False):
     c = [f"{C.c(Color)}", f"{C.c(7)}"] #& <- Cor de destaque
-    Linha("∿∿",12,7, True)
-    print(f"{c[0]}{"Detalhes de Cadastros 📄👤"}{c[1]}")  
-    Linha("∿∿",12,7, True)
+    Linha("∿∿",14,7, True)
+    print(f"{c[0]}{"Detalhes de Cadastros 👤📄":^28}{c[1]}")  
+    print(f"~> {""}{"Nome"}{"Idade"}{"Sexo"}")
+    Linha("∿∿",14,7, True)
+
     for pos, dados in enumerate(Banco):
-        print(f"{pos+1} {dados["Nome"]} {dados["Idade"]} {dados["Sexo"]}")
+        print(f"{pos+1:<3} {dados["Nome"]} {dados["Idade"]} {dados["Sexo"]}")
         pause(0.6) if animação else print(end="")
     Linha("-—",12,7,True)
 

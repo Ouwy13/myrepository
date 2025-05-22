@@ -45,3 +45,7 @@ def Analize_Ops(esc):
         return True
     else:
         return False
+
+
+
+        
