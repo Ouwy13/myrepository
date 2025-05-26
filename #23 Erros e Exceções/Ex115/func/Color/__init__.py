@@ -16,7 +16,7 @@ def c(color=""):
         else:
             return f"\033[m\033[1;3{color}m"   
 
-def caixa_arredondada(texto, cor_texto=37, cor_fundo=40):
+def caixa_arredondada(texto, cor_texto=7, cor_fundo=7):
     """
     Cria uma caixa com bordas arredondadas ao redor do texto.
     
@@ -25,8 +25,8 @@ def caixa_arredondada(texto, cor_texto=37, cor_fundo=40):
         cor_texto (str): Código ANSI para a cor do texto (padrão: branco).
         cor_fundo (str): Código ANSI para a cor do fundo (padrão: preto).
     """
-    texto_formatado = f"{c(cor_texto)}{c(cor_fundo)} {texto} {c()}"
+    texto_formatado = f"{c(cor_texto)} {texto} {c(7)}"
     largura = len(texto) + 2
-    borda_superior = f"{c(cor_fundo)}╭{'─' * largura}╮{c()}"
-    borda_inferior = f"{c(cor_fundo)}╰{'─' * largura}╯{c()}"
-    return f"{borda_superior}\n{c(cor_fundo)}│{texto_formatado}│{c()}\n{borda_inferior}"
+    borda_superior = f"{c(cor_fundo)}╭{'─' * largura}╮{c(7)}"
+    borda_inferior = f"{c(cor_fundo)}╰{'─' * largura}╯{c(7)}"
+    return f"{borda_superior}\n{c(cor_fundo)}│{texto_formatado}│{c(7)}\n{borda_inferior}"

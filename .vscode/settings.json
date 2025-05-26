@@ -1,7 +1,6 @@
 {
   "custom-ui-style.font.monospace": "GeistMono Nerd Font Mono",
   "custom-ui-style.font.sansSerif": "GeistMono Nerd Font Mono",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",  
   "editor.fontFamily": "DankMono Nerd Font", // Fonte usada no editor
   "editor.fontSize": 20, // Tamanho da fonte no editor
@@ -12,7 +11,7 @@
   //Ligatures 
   "editor.fontLigatures": true, // Ativa ligaduras na fonte
   //Tamanho do testo na tela
-  "editor.rulers": [80, 120], // Regras visuais para guiar o comprimento das linhas
+  "editor.rulers": [85, 180], // Regras visuais para guiar o comprimento das linhas
   // Borda da linha
   "editor.renderLineHighlight": "gutter", // Destaca a linha atual no editor
   "workbench.editor.labelFormat": "short", // Formato dos rótulos dos arquivos abertos
