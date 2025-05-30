@@ -1,0 +1,225 @@
+
+Resumo Completo do Curso de Python (Comentado)
+
+1. Módulos Padrão
+
+- math
+  Funções matemáticas úteis para cálculos.
+  from math import sqrt, factorial, trunc, floor, sin, cos, tan, radians
+  print(sqrt(16))        # Calcula a raiz quadrada de 16
+  print(factorial(5))    # Calcula o fatorial de 5 (5*4*3*2*1)
+  print(trunc(3.9))      # Trunca o número, removendo a parte decimal (3)
+  print(floor(3.9))      # Arredonda para baixo (3)
+  print(sin(radians(90)))# Seno de 90 graus (precisa converter para radianos)
+
+- random
+  Geração de números e escolhas aleatórias.
+  from random import randint, choice
+  print(randint(1, 10))          # Número inteiro aleatório entre 1 e 10
+  print(choice(['a', 'b', 'c'])) # Escolhe aleatoriamente um elemento da lista
+
+- time
+  Manipulação de tempo e pausas no programa.
+  from time import sleep
+  sleep(2)  # Pausa a execução por 2 segundos
+
+- os
+  Comandos do sistema operacional, manipulação de arquivos e diretórios.
+  import os
+  os.system('cls')                # Limpa o terminal no Windows
+  print(os.listdir('.'))          # Lista arquivos e pastas do diretório atual
+  print(os.path.exists('arquivo.txt')) # Verifica se o arquivo existe
+
+- datetime
+  Trabalha com datas e horários.
+  from datetime import datetime
+  agora = datetime.now()                  # Data e hora atuais
+  print(agora.strftime('%d/%m/%Y %H:%M')) # Formata a data/hora para string
+
+- operator
+  Funções utilitárias para ordenação e comparação.
+  import operator
+  lista = [("Ana", 3), ("Bia", 2)]
+  lista.sort(key=operator.itemgetter(1))  # Ordena a lista pelo segundo elemento de cada tupla
+
+- json
+  Leitura e escrita de arquivos no formato JSON (útil para salvar dados).
+  import json
+  with open('dados.json', 'w') as f:
+      json.dump({'nome': 'Ana'}, f)   # Salva um dicionário em formato JSON
+  with open('dados.json') as f:
+      dados = json.load(f)            # Lê o arquivo JSON e carrega como dicionário
+
+2. Fatiamento, Análise e Transformação de Strings
+
+- Fatiamento
+  Permite acessar partes específicas de uma string.
+  texto = "Python"
+  print(texto[1:4])   # Mostra caracteres do índice 1 ao 3: 'yth'
+  print(texto[::-1])  # Inverte a string: 'nohytP'
+
+- Análise
+  Métodos para analisar e buscar informações em strings.
+  frase = 'Curso em Vídeo Python'
+  print(len(frase))         # Conta o número de caracteres
+  print(frase.count('o'))   # Conta quantas vezes 'o' aparece
+  print(frase.find('deo'))  # Retorna o índice inicial de 'deo'
+  print('Curso' in frase)   # Verifica se 'Curso' está na frase (True/False)
+
+- Transformação
+  Métodos para modificar strings.
+  print(frase.replace('Python', 'Android')) # Troca 'Python' por 'Android'
+  print(frase.upper())                      # Converte para maiúsculas
+  print(frase.lower())                      # Converte para minúsculas
+  print(frase.capitalize())                 # Primeira letra maiúscula
+  print(frase.title())                      # Primeira letra de cada palavra maiúscula
+  print(frase.strip())                      # Remove espaços do início/fim
+  print(frase.split())                      # Divide a string em lista de palavras
+  print('-'.join(frase.split()))            # Junta as palavras com '-'
+
+3. Cores no Terminal
+
+- Códigos ANSI
+  Permite colorir textos no terminal.
+  print('\033[31mTexto vermelho\033[m')     # Exibe texto em vermelho
+  print('\033[1;32mVerde negrito\033[m')    # Exibe texto em verde e negrito
+
+4. Laços de Repetição e Regras de Contagem
+
+- for e while
+  Estruturas para repetir comandos várias vezes.
+  for i in range(1, 6):     # Repete de 1 a 5
+      print(i)
+  cont = 0
+  while cont < 5:           # Repete enquanto cont < 5
+      cont += 1
+
+- Regras de contagem
+  Personalize o início, fim e passo do laço.
+  for i in range(10, 0, -1):  # Contagem regressiva de 10 a 1
+      print(i)
+
+5. Funções Úteis
+
+- Maior/Menor
+  def maior(*nums):
+      return max(nums)  # Retorna o maior valor recebido
+
+  def menor(*nums):
+      return min(nums)  # Retorna o menor valor recebido
+
+- Número Primo
+  def eh_primo(n):
+      tot = 0
+      for c in range(1, n+1):
+          if n % c == 0:
+              tot += 1
+      return tot == 2  # Só é primo se tiver exatamente 2 divisores
+
+- Fatorial
+  from math import factorial
+  print(factorial(5))  # Usando módulo math
+
+  # Ou manualmente:
+  def fatorial(n):
+      res = 1
+      for i in range(n, 0, -1):
+          res *= i
+      return res
+
+- Condição [S/N]
+  def cond_sn(msg):
+      while True:
+          resp = input(msg).strip().upper()
+          if resp in ['S', 'N']:
+              return resp  # Só aceita S ou N
+
+- Análise de Dados
+  def analise_lista(lista):
+      return {
+          'quantidade': len(lista), # Quantidade de elementos
+          'maior': max(lista),      # Maior valor
+          'menor': min(lista)       # Menor valor
+      }
+
+- Análise de Nome Simples/Composto
+  def tipo_nome(nome):
+      return 'Composto' if len(nome.split()) > 1 else 'Simples'
+      # Se tiver mais de uma palavra, é composto
+
+6. Tuplas, Listas e Dicionários
+
+Tuplas
+- Estruturas imutáveis (não podem ser alteradas).
+  t = (1, 2, 3)
+  print(t.count(2))   # Conta quantas vezes 2 aparece
+  print(t.index(3))   # Retorna o índice do valor 3
+
+Listas
+- Estruturas mutáveis (podem ser alteradas).
+  l = [3, 1, 2]
+  l.append(4)     # Adiciona 4 ao final
+  l.remove(1)     # Remove o valor 1
+  l.sort()        # Ordena a lista
+  print(l)
+
+Dicionários
+- Estruturas de chave-valor.
+  d = {'a': 1, 'b': 2}
+  d['c'] = 3         # Adiciona nova chave
+  del d['a']         # Remove chave 'a'
+  print(d.keys())    # Mostra todas as chaves
+  print(d.values())  # Mostra todos os valores
+
+Funções de Manipulação
+- Analisar: Verificar existência, buscar valores, etc.
+  if 'b' in d:
+      print('Chave b existe')
+- Apagar: del, .remove(), .pop(), .clear()
+  l.pop()      # Remove o último elemento
+  d.pop('b')   # Remove a chave 'b'
+  l.clear()    # Limpa toda a lista
+- Quantidade: len()
+  print(len(l))  # Quantidade de elementos na lista
+- Ordenação: .sort(), sorted()
+  l.sort()               # Ordena a lista no lugar
+  nova = sorted(l)       # Retorna uma nova lista ordenada
+- Maior/Menor: max(), min()
+  print(max(l))  # Maior valor
+  print(min(l))  # Menor valor
+- Exibição com posição e contador
+  for i, v in enumerate(l):
+      print(f'Posição {i}: {v}')  # Mostra índice e valor
+
+7. Funções, Escopos e Outros
+
+- Definição de funções
+  def saudacao(nome):
+      print(f'Olá, {nome}!')
+
+- Parâmetros opcionais
+  def soma(a, b=0):
+      return a + b  # b é opcional, padrão 0
+
+- Empacotamento de parâmetros
+  def soma(*valores):
+      return sum(valores)  # Recebe vários valores
+
+- Escopo
+  x = 10
+  def func():
+      global x
+      x = 20  # Altera a variável global x
+
+- Docstrings e help
+  def fatorial(n):
+      """Calcula o fatorial de n"""
+      ...
+  help(fatorial)  # Mostra a documentação da função
+
+8. Exibição com Posição e Contador
+
+- Enumerate
+  for i, valor in enumerate(['a', 'b', 'c']):
+      print(f'Posição {i}: {valor}')  # Mostra índice e valor
+

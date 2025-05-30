@@ -114,10 +114,28 @@ def Leia_Nome(msg):
             print(f"{C.c(1)}Informe o Nome!{C.c(7)}")
 
 def Leia_Idade(msg):
-    print()
+    while True:
+        try:
+            idade = int(input(msg))
+            if 0 < idade < 150:
+                return idade
+                break
+            else:
+                print(f"{C.c(1)}Idade invalida!{C.c(7)}")
+        except ValueError:
+            print(f"{C.c(1)}Informe a Idade!{C.c(7)}")
 
 def Leia_Sexo(msg):
-    print()
+    while True:
+        try:
+            sexo = str(input(msg)).upper().split()[0]
+            if sexo in "MF":
+                return sexo
+                break
+            else:
+                print(f"{C.c(1)}Sexo invalido!{C.c(7)}")
+        except IndexError:
+            print(f"{C.c(1)}Informe o Sexo!{C.c(7)}")
 
 
     
